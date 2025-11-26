@@ -6,4 +6,12 @@ body {
   margin: 0;
 }
 
+p {
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
 /*# sourceMappingURL=main.css.map */
