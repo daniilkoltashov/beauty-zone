@@ -1,23 +1,113 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-  </head>
-  <body>
-    <header></header>
-    <main>
-      <section></section>
-      <section></section>
-      <section></section>
-      <section></section>
-      <section></section>
-    </main>
-    <footer></footer>
-  </body>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  />
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="ie=edge"
+  />
+  <title>Document</title>
+  <link
+    rel="stylesheet"
+    href="./styles/main.css"
+  />
+</head>
+<body>
+<header class="header">
+  <div class="header__container">
+    <nav class="header__nav">
+      <div class="header__logo">
+        <a href="/">
+          <img
+            src="/images/logo.svg"
+            alt="Логотип клиники"
+          />
+        </a>
+      </div>
+      <ul class="header__menu">
+        <li>
+          <a
+            class="header__menu-link ac"
+            href="/"
+          > Про нас
+          </a>
+        </li>
+        <li>
+          <a
+            class="header__menu-link"
+            href="/"
+          > Чому ми
+          </a>
+        </li>
+        <li>
+          <a
+            class="header__menu-link"
+            href="/"
+          > Наші процедури
+          </a>
+        </li>
+        <li>
+          <a
+            class="header__menu-link"
+            href="/"
+          > Контакти
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__socials">
+      <svg
+        class="header__socials-icon"
+        width="32"
+        height="32"
+      >
+        <use href="/images/icons.svg#icon-tel"></use>
+      </svg>
+      <svg
+        class="header__socials-icon"
+        width="32"
+        height="32"
+      >
+        <use href="/images/icons.svg#icon-facebook"></use>
+      </svg>
+      <svg
+        class="header__socials-icon"
+        width="32"
+        height="32"
+      >
+        <use href="/images/icons.svg#icon-instagram"></use>
+      </svg>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="hero-section">
+    <div class="hero-section__container container">
+      <p class="hero-section__text-large">Косметологічна клініка</p>
+      <h1 class="hero-section__title">
+        Beauty<br />
+        Zone
+      </h1>
+      <div class="hero-section__button">
+        <button
+          class="hero-section__button-small button"
+          type="button"
+        >Замовити дзвінок
+        </button>
+        <p class="hero-section__text-small">Запишись та отримай безкоштовну<br> консультацію нашого косметолога
+        </p>
+      </div>
+    </div>
+  </section>
+  <section></section>
+  <section></section>
+  <section></section>
+  <section></section>
+</main>
+<footer></footer>
+</body>
 </html>

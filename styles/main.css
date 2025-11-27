@@ -1,17 +1,214 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 body {
+  color: var(--color-primary-light-blue);
+  background-color: var(--color-primary-light), rgb(255, 255, 255);
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
   margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 p {
-  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  color: var(--color-primary-light-blue), rgb(43, 127, 255);
+  font-family: Play, sans-serif;
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 0.8;
+}
+
+h2 {
+  color: var(--color-primary-mi-blue);
+  font-family: Play, sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+a {
+  display: inline-block;
+}
+
+address {
+  font-style: normal;
 }
 
 ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/play-v21-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/play-v21-latin-700.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/roboto-v50-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/roboto-v50-latin-600.woff2") format("woff2");
+}
+:root {
+  --color-primary-light: #ffffff;
+  --color-primary-light-blue: #2b7fff;
+  --color-primary-midnight-blue: #011c44;
+  --color-secondary-dark-gray: #4a4a4a;
+  --color-secondary-medium-gray: #747272;
+  --color-secondary-navy-blue: #011f4a;
+  --color-secondary-yellow: #ffd02b;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.button {
+  color: var(--color-primary-light);
+  background-color: var(--color-primary-light-blue);
+  padding: 16px 32px;
+  font-weight: 600;
+  border: none;
+  border-radius: 32px;
+  line-height: 1.16;
+}
+.button:hover {
+  color: var(--color-primary-midnight-blue-blue);
+  background-color: transparent;
+  border: 2px solid var(--color-primary-light-blue);
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  padding: 32px 100px;
+}
+.header__nav {
+  display: flex;
+  flex-grow: 1;
+}
+.header__menu {
+  margin: 0 240px;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 56px;
+}
+.header__menu-link {
+  color: var(--color-primary-midnight-blue);
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.15;
+  text-decoration: none;
+}
+.header__menu-link:hover {
+  color: var(--color-primary-light-blue), rgb(43, 127, 255);
+}
+.header__socials {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+.header__socials-icon {
+  fill: var(--color-primary-midnight-blue);
+}
+.header__socials-icon:hover {
+  fill: var(--color-primary-light-blue);
+  cursor: pointer;
+}
+
+.hero-section {
+  height: 700px;
+  max-height: 100%;
+  background-image: linear-gradient(94.33deg, rgb(255, 255, 255) 10%, rgba(255, 255, 255, 0.85) 26%, rgba(255, 255, 255, 0.19) 53%, rgba(255, 255, 255, 0) 74%), url(/images/hero-background.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.hero-section__container {
+  padding: 128px 100px;
+}
+.hero-section__text-large {
+  color: var(--color-primary-midnight-blue);
+  padding: 16px 0;
+  font-size: 18px;
+}
+.hero-section__text-small {
+  color: var(--color-secondary-dark-gray);
+  padding: 14px 0;
+  font-size: 12px;
+  text-align: center;
+}
+.hero-section__title {
+  padding-bottom: 40px;
+}
+.hero-section__button {
+  width: 240px;
+}
+.hero-section__button-small {
+  display: block;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=main.css.map */
