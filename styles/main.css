@@ -71,6 +71,10 @@ ul {
   color: var(--color-primary-midnight-blue);
 }
 
+.centered {
+  text-align: center;
+}
+
 .text-bold {
   color: var(--color-primary-midnight-blue);
   font-weight: 700;
@@ -188,7 +192,6 @@ ul {
 }
 
 .hero-section {
-  height: 100dvh;
   background-image: linear-gradient(94.33deg, rgb(255, 255, 255) 10%, rgba(255, 255, 255, 0.85) 26%, rgba(255, 255, 255, 0.19) 53%, rgba(255, 255, 255, 0) 74%), url(/images/hero-background.png);
   background-repeat: no-repeat;
   background-position: center top;
@@ -213,12 +216,14 @@ ul {
   text-align: center;
 }
 
+.services-section {
+  padding-bottom: 176px;
+}
 .services-section__container {
   display: flex;
-  gap: 32px;
+  gap: 28px;
 }
 .services-section__content {
-  width: 710px;
   max-width: 100%;
   display: flex;
   flex-direction: column;
@@ -231,20 +236,17 @@ ul {
   line-height: 1.7;
 }
 .services-section__result {
-  position: relative;
   display: flex;
   flex-direction: column;
-  width: 330px;
+  flex-shrink: 0;
+  gap: 40px;
 }
 .services-section__result img:first-child {
-  position: absolute;
-  top: 0;
-  right: 0;
+  width: 335px;
 }
 .services-section__result img:last-child {
-  position: absolute;
-  top: 350px;
-  left: 180px;
+  width: 335px;
+  margin-left: 180px;
 }
 
 /*# sourceMappingURL=main.css.map */
