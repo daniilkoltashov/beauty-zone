@@ -7,10 +7,11 @@
 @use 'utils/mixins';
 
 @use 'components/button';
+@use 'components/carousel-button';
 
 @use 'layouts/header';
 @use 'layouts/hero-section';
 @use 'layouts/services-section';
 @use 'layouts/advantages-section';
 @use 'layouts/treatments-section';
-
+@use 'layouts/contacts-section';

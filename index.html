@@ -5,7 +5,7 @@
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1.0"
-  >
+  />
   <meta
     http-equiv="X-UA-Compatible"
     content="ie=edge"
@@ -154,8 +154,9 @@
               >
                 <use href="/images/icons.svg#icon-atom"></use>
               </svg>
-              <p>Всі наші косметологи мають вищу медичну освіту
-                та стаж роботи від 5 років
+              <p>
+                Всі наші косметологи мають вищу медичну освіту та стаж
+                роботи від 5 років
               </p>
             </div>
           </article>
@@ -170,7 +171,10 @@
               >
                 <use href="/images/icons.svg#icon-products"></use>
               </svg>
-              <p>Використовуємо тільки професійне обладнання та косметику, перевірену часом</p>
+              <p>
+                Використовуємо тільки професійне обладнання та косметику,
+                перевірену часом
+              </p>
             </div>
           </article>
         </li>
@@ -184,7 +188,10 @@
               >
                 <use href="/images/icons.svg#icon-advantage"></use>
               </svg>
-              <p>Наша мета - підкреслити переваги та приховати недоліки, а не переробити</p>
+              <p>
+                Наша мета - підкреслити переваги та приховати недоліки, а не
+                переробити
+              </p>
             </div>
           </article>
         </li>
@@ -196,34 +203,134 @@
       <h2 class="treatments-section__container-title centered">
         <span class="text-brand">Наші</span> процедури
       </h2>
-      <ul class="advantages-section__list">
-        <li>
-          <article class="advantages-section__list-card">
-            <div class="advantages-section__list-text">
-
-              <p>Маски<br> для обличчя
-              </p>
-            </div>
-          </article>
-        </li>
-        <li class="advantages-section__list-card">
-          <article>
-            <div class="advantages-section__list-text">
-
-            </div>
-          </article>
-        </li>
-        <li class="advantages-section__list-card">
-          <article>
-            <div class="advantages-section__list-text">
-
-            </div>
-          </article>
-        </li>
-      </ul>
+      <div class="treatments-section__slider">
+        <button
+          class="treatments-section__button carousel-button prev"
+          type="button"
+        >
+          <svg
+            width="22"
+            height="22"
+          >
+            <use href="/images/icons.svg#icon-arrow"></use>
+          </svg>
+        </button>
+        <ul class="treatments-section__list">
+          <li>
+            <article class="treatments-section__list-card">
+              <img
+                class="treatments-section__list-card-image"
+                src="./images/mask-face.jpg"
+                alt="Маска для обличчя"
+              />
+              <div class="treatments-section__list-text">
+                <p>
+                  Маски<br />
+                  для обличчя
+                </p>
+              </div>
+            </article>
+          </li>
+          <li class="treatments-section__list-card">
+            <article>
+              <img
+                class="treatments-section__list-card-image"
+                src="./images/facial-injection.jpg"
+                alt="Маска для обличчя"
+              />
+            </article>
+          </li>
+          <li class="treatments-section__list-card">
+            <article>
+              <img
+                class="treatments-section__list-card-image"
+                src="./images/facial-peeling.jpg"
+                alt="Маска для обличчя"
+              />
+            </article>
+          </li>
+        </ul>
+        <button
+          class="treatments-section__button carousel-button next"
+          type="button"
+        >
+          <svg
+            width="22"
+            height="22"
+          >
+            <use href="/images/icons.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </div>
     </div>
   </section>
-  <section></section>
+  <section class="contacts-section">
+    <h2 class="contacts-section__container-title centered">
+      <span class="text-brand">Як нас</span> знайти
+    </h2>
+    <div class="contacts-section__container container">
+      <iframe
+        class="contacts-section__maps"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.940062918635!2d30.51555397646976!3d50.44221707159048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C7LiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1764696006881!5m2!1sru!2sua"
+        width="605"
+        height="480"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <div class="contacts-section__forms">
+        <h2 class="contacts-section__forms-title">Запишіться
+          <span class="text-light-blue">безкоштовно</span><br>
+          та отримайте подарунок
+        </h2>
+        <form
+          class="contacts-section__form"
+          autocomplete="off"
+        >
+          <div class="contacts-section__form-field">
+            <label
+              class="contacts-section__form-label visually-hidden"
+              for="user-name"
+            >Імʼя
+            </label>
+            <input
+              class="contacts-section__form-input"
+              type="text"
+              id="user-name"
+              placeholder="Ваше ім'я та прізвище"
+            >
+          </div>
+          <div class="contacts-section__form-field">
+            <label
+              class="contacts-section__form-label visually-hidden"
+              for="user-name"
+            >Телефон
+            </label>
+            <input
+              class="contacts-section__form-input"
+              type="tel"
+              id="tel"
+              placeholder="Ваш номер телефону"
+            >
+          </div>
+          <div class="contacts-section__form-field">
+            <label
+              class="contacts-section__form-label visually-hidden"
+              for="email"
+            >Електронна пошта
+            </label>
+            <input
+              class="contacts-section__form-input"
+              type="email"
+              id="email"
+              placeholder="Ваша електронна пошта"
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
 </main>
 <footer></footer>
 </body>

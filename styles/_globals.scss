@@ -71,11 +71,16 @@ ul {
   color: var(--color-primary-midnight-blue);
 }
 
-.centered {
-  text-align: center;
+.text-light-blue {
+  color: var(--color-primary-light-blue);
 }
 
 .text-bold {
   color: var(--color-primary-midnight-blue);
   font-weight: 700;
 }
+
+.centered {
+  text-align: center;
+}
+
