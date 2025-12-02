@@ -19,10 +19,14 @@
       width: 316px;
       height: 181px;
       border-radius: 32px;
-      /* beauty landing 2/Ef1 */
       box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
       background: rgba(255, 255, 255, 1);
+
     }
+      &-icon {
+        fill: var(--color-primary-light-blue);
+      }
+
 
     &-text {
       color: var(--color-primary-midnight-blue);
