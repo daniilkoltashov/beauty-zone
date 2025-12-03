@@ -27,7 +27,7 @@ p {
 
 h1 {
   color: var(--color-primary-light-blue), rgb(43, 127, 255);
-  font-family: Play, sans-serif;
+  font-family: "Play", sans-serif;
   font-size: 140px;
   font-weight: 700;
   line-height: 0.8;
@@ -35,7 +35,7 @@ h1 {
 
 h2 {
   color: var(--color-primary-mi-blue);
-  font-family: Play, sans-serif;
+  font-family: "Play", sans-serif;
   font-size: 64px;
   font-weight: 700;
   line-height: 1.15;
@@ -87,31 +87,31 @@ ul {
 
 @font-face {
   font-display: swap;
-  font-family: 'Play';
+  font-family: "Play";
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/play-v21-latin-regular.woff2') format('woff2');
+  src: url("fonts/play-v21-latin-regular.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
-  font-family: 'Play';
+  font-family: "Play";
   font-style: normal;
   font-weight: 700;
-  src: url('/fonts/play-v21-latin-700.woff2') format('woff2');
+  src: url("/fonts/play-v21-latin-700.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/roboto-v50-latin-regular.woff2') format('woff2');
+  src: url("/fonts/roboto-v50-latin-regular.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
-  src: url('/fonts/roboto-v50-latin-600.woff2') format('woff2');
+  src: url("/fonts/roboto-v50-latin-600.woff2") format("woff2");
 }
 :root {
   --color-primary-light: #ffffff;
@@ -230,6 +230,114 @@ ul {
   text-underline-offset: 2px;
 }
 
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  fill: var(--color-primary-light);
+  background-color: transparent;
+  border: none;
+}
+.modal-btn-close:hover {
+  fill: var(--color-primary-light-blue);
+  cursor: pointer;
+}
+
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 723px;
+  height: 100%;
+  max-height: 681px;
+  padding: 42px 144px;
+  background-color: var(--color-secondary-navy-blue);
+  border-radius: 48px;
+}
+.modal__title {
+  color: var(--color-primary-light);
+  text-align: center;
+  padding-bottom: 40px;
+}
+.modal__text {
+  color: var(--color-primary-light);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.18;
+  text-align: center;
+  padding-bottom: 32px;
+}
+.modal__form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal__form-field {
+  margin-bottom: 24px;
+}
+.modal__form-label {
+  position: absolute;
+  top: 16px;
+  left: 42px;
+}
+.modal__form-input {
+  color: var(--color-primary-light);
+  padding: 18px 32px 18px 32px;
+  width: 310px;
+  max-width: 100%;
+  background-color: transparent;
+  border: 2px solid var(--color-secondary-medium-gray);
+  border-radius: 32px;
+}
+.modal__form-input:focus {
+  color: var(--color-primary-light);
+  background-color: var(--color-secondary-medium-gray);
+  outline: none;
+}
+.modal__form-input::placeholder {
+  color: var(--color-primary-light);
+  font-size: 13px;
+}
+.modal__form-button {
+  display: block;
+  margin: 0 auto 8px;
+  color: var(--color-primary-light);
+  font-size: 18px;
+  font-weight: 250;
+  padding: 16px 32px 16px 32px;
+}
+.modal__form-button:hover {
+  color: var(--color-primary-light);
+}
+.modal__form-text {
+  color: var(--color-secondary-medium-gray);
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}
+.modal__form-terms {
+  color: var(--color-secondary-medium-gray);
+  text-underline-offset: 2px;
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -280,15 +388,7 @@ ul {
 }
 
 .hero-section {
-  background-image:
-    linear-gradient(
-      94.33deg,
-      rgb(255, 255, 255) 10%,
-      rgba(255, 255, 255, 0.85) 26%,
-      rgba(255, 255, 255, 0.19) 53%,
-      rgba(255, 255, 255, 0) 74%
-    ),
-    url(/images/hero-background.png);
+  background-image: linear-gradient(94.33deg, rgb(255, 255, 255) 10%, rgba(255, 255, 255, 0.85) 26%, rgba(255, 255, 255, 0.19) 53%, rgba(255, 255, 255, 0) 74%), url(/images/hero-background.png);
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
@@ -409,12 +509,7 @@ ul {
   width: 344px;
   height: 456px;
   border-radius: 4px 120px 4px 120px;
-  background-image: linear-gradient(
-    180deg,
-    rgba(1, 28, 68, 0) 47%,
-    rgba(1, 28, 68, 0.73) 83%,
-    rgb(1, 28, 68) 99%
-  );
+  background-image: linear-gradient(180deg, rgba(1, 28, 68, 0) 47%, rgba(1, 28, 68, 0.73) 83%, rgb(1, 28, 68) 99%);
   overflow: hidden;
 }
 .treatments-section__image {
@@ -468,9 +563,9 @@ ul {
   bottom: -60px;
   width: 278px;
   height: 213px;
-  background-image: url('/images/cosmetics.png');
+  background-image: url("/images/cosmetics.png");
   background-repeat: no-repeat;
-  content: '';
+  content: "";
 }
 .footer__container {
   display: flex;
