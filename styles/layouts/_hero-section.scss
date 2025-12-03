@@ -1,13 +1,12 @@
 .hero-section {
-  background-image:
-    linear-gradient(
+  background-image: linear-gradient(
       94.33deg,
       rgba(255, 255, 255, 1) 10%,
       rgba(255, 255, 255, 0.85) 26%,
       rgba(255, 255, 255, 0.19) 53%,
       rgba(255, 255, 255, 0) 74%
-    ),
-    url(/images/hero-background.png);
+  ),
+  url(/images/hero-background.png);
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
@@ -16,7 +15,7 @@
     padding: 122px 106px;
   }
 
-  &__text-large {
+  &__text {
     color: var(--color-primary-midnight-blue);
     padding-bottom: 16px;
     font-size: 18px;
@@ -26,7 +25,17 @@
     padding-bottom: 40px;
   }
 
-  &__text-small {
+  &__button {
+    color: var(--color-primary-light);
+    font-size: 18px;
+    font-weight: 400;
+
+    &:hover {
+      color: var(--color-secondary-navy-blue);
+    }
+  }
+
+  &__terms {
     width: 218px;
     color: var(--color-secondary-dark-gray);
     padding-top: 14px;

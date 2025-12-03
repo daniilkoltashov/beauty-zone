@@ -1,73 +1,20 @@
 .contacts-section {
   padding-bottom: 96px;
 
+  &__title {
+    padding-bottom: 48px;
+  }
+
   &__container {
     padding: 0 64px 0 64px;
     display: flex;
     flex-direction: row;
     gap: 32px;
-
-    &-title {
-      padding-bottom: 48px;
-    }
   }
 
   &__maps {
+    width: 605px;
+    height: 480px;
     border-radius: 32px;
-  }
-
-  &__forms {
-    padding: 48px 56px 48px 56px;
-    width: 423px;
-    height: 481px;
-    border-radius: 32px;
-    background:
-    url("/images/background-forms.png") center center no-repeat,
-    var(--color-secondary-navy-blue);
-
-
-    &-title {
-      padding-bottom: 32px;
-      color: var(--color-primary-light);
-      font-size: 22px;
-      font-weight: 700;
-      line-height: 1.18;
-      text-align: center;
-    }
-  }
-
-  &__form {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    &-field {}
-    &-label {
-      position: absolute;
-      top: 16px;
-      left: 42px;
-    }
-    &-input {
-      color: var(--color-primary-light);
-      width: 310px;
-      max-width: 100%;
-      padding: 18px 32px 18px 32px;
-      border-radius: 32px;
-      background-color: transparent;
-      border: 2px solid var(--color-secondary-medium-gray);
-
-      &:focus {
-        color: var(--color-primary-light);
-        background-color: var(--color-secondary-medium-gray);
-        outline: none;
-      }
-
-      &::placeholder {
-        font-size: 13px;
-        color: var(--color-primary-light);
-      };
-    }
   }
 }

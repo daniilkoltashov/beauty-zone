@@ -132,16 +132,12 @@ ul {
 }
 
 .button {
-  color: var(--color-primary-light);
   background-color: var(--color-primary-light-blue);
   padding: 16px 32px;
-  font-size: 18px;
-  font-weight: 400;
   border: 2px solid var(--color-primary-light-blue);
   border-radius: 32px;
 }
 .button:hover {
-  color: var(--color-primary-midnight-blue-blue);
   background-color: transparent;
   border: 2px solid var(--color-primary-light-blue);
   cursor: pointer;
@@ -168,6 +164,69 @@ ul {
 }
 .carousel-button.next {
   transform: rotate(180deg);
+}
+
+.contacts-form {
+  position: relative;
+  padding: 48px 56px 48px 56px;
+  width: 423px;
+  height: 481px;
+  background: var(--color-secondary-navy-blue);
+  border-radius: 32px;
+}
+.contacts-form__title {
+  color: var(--color-primary-light);
+  padding-bottom: 32px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.18;
+  text-align: center;
+}
+.contacts-form__field {
+  margin-bottom: 16px;
+}
+.contacts-form__label {
+  position: absolute;
+  top: 16px;
+  left: 42px;
+}
+.contacts-form__input {
+  color: var(--color-primary-light);
+  padding: 18px 32px 18px 32px;
+  width: 310px;
+  max-width: 100%;
+  background-color: transparent;
+  border: 2px solid var(--color-secondary-medium-gray);
+  border-radius: 32px;
+}
+.contacts-form__input:focus {
+  color: var(--color-primary-light);
+  background-color: var(--color-secondary-medium-gray);
+  outline: none;
+}
+.contacts-form__input::placeholder {
+  color: var(--color-primary-light);
+  font-size: 13px;
+}
+.contacts-form__button {
+  display: block;
+  margin: 0 auto 8px;
+  color: var(--color-primary-light);
+  font-size: 18px;
+  font-weight: 250;
+}
+.contacts-form__button:hover {
+  color: var(--color-primary-light);
+}
+.contacts-form__text {
+  color: var(--color-secondary-medium-gray);
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}
+.contacts-form__terms {
+  color: var(--color-secondary-medium-gray);
+  text-underline-offset: 2px;
 }
 
 .header {
@@ -227,7 +286,7 @@ ul {
 .hero-section__container {
   padding: 122px 106px;
 }
-.hero-section__text-large {
+.hero-section__text {
   color: var(--color-primary-midnight-blue);
   padding-bottom: 16px;
   font-size: 18px;
@@ -235,7 +294,15 @@ ul {
 .hero-section__title {
   padding-bottom: 40px;
 }
-.hero-section__text-small {
+.hero-section__button {
+  color: var(--color-primary-light);
+  font-size: 18px;
+  font-weight: 400;
+}
+.hero-section__button:hover {
+  color: var(--color-secondary-navy-blue);
+}
+.hero-section__terms {
   width: 218px;
   color: var(--color-secondary-dark-gray);
   padding-top: 14px;
@@ -268,18 +335,17 @@ ul {
   flex-shrink: 0;
   gap: 40px;
 }
-.services-section__result img:first-child {
+.services-section__result img {
   width: 335px;
 }
 .services-section__result img:last-child {
-  width: 335px;
   margin-left: 180px;
 }
 
 .advantages-section {
   padding-bottom: 96px;
 }
-.advantages-section__container-title {
+.advantages-section__title {
   padding-bottom: 48px;
 }
 .advantages-section__list {
@@ -287,7 +353,7 @@ ul {
   justify-content: center;
   gap: 56px;
 }
-.advantages-section__list-card {
+.advantages-section__card {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -297,21 +363,22 @@ ul {
   box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
   background: rgb(255, 255, 255);
 }
-.advantages-section__list-icon {
-  fill: var(--color-primary-light-blue);
-}
-.advantages-section__list-text {
+.advantages-section__text {
   color: var(--color-primary-midnight-blue);
   padding: 24px 32px;
   font-size: 18px;
   text-align: center;
   line-height: 1.3;
 }
+.advantages-section__icon {
+  margin-bottom: 10px;
+  fill: var(--color-primary-light-blue);
+}
 
 .treatments-section {
   padding-bottom: 96px;
 }
-.treatments-section__container-title {
+.treatments-section__title {
   padding-bottom: 48px;
 }
 .treatments-section__slider {
@@ -325,7 +392,7 @@ ul {
   justify-content: center;
   gap: 16px;
 }
-.treatments-section__list-card {
+.treatments-section__card {
   position: relative;
   display: flex;
   justify-content: center;
@@ -335,7 +402,7 @@ ul {
   background-image: linear-gradient(180deg, rgba(1, 28, 68, 0) 47%, rgba(1, 28, 68, 0.73) 83%, rgb(1, 28, 68) 99%);
   overflow: hidden;
 }
-.treatments-section__list-card-image {
+.treatments-section__image {
   position: absolute;
   z-index: -1;
   top: 0;
@@ -343,10 +410,7 @@ ul {
   width: 100%;
   height: 100%;
 }
-.treatments-section__list-icon {
-  fill: var(--color-primary-light-blue);
-}
-.treatments-section__list-text {
+.treatments-section__text {
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -360,63 +424,19 @@ ul {
 .contacts-section {
   padding-bottom: 96px;
 }
+.contacts-section__title {
+  padding-bottom: 48px;
+}
 .contacts-section__container {
   padding: 0 64px 0 64px;
   display: flex;
   flex-direction: row;
   gap: 32px;
 }
-.contacts-section__container-title {
-  padding-bottom: 48px;
-}
 .contacts-section__maps {
+  width: 605px;
+  height: 480px;
   border-radius: 32px;
-}
-.contacts-section__forms {
-  padding: 48px 56px 48px 56px;
-  width: 423px;
-  height: 481px;
-  border-radius: 32px;
-  background: url("/images/background-forms.png") center center no-repeat, var(--color-secondary-navy-blue);
-}
-.contacts-section__forms-title {
-  padding-bottom: 32px;
-  color: var(--color-primary-light);
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 1.18;
-  text-align: center;
-}
-.contacts-section__form {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-}
-.contacts-section__form-label {
-  position: absolute;
-  top: 16px;
-  left: 42px;
-}
-.contacts-section__form-input {
-  color: var(--color-primary-light);
-  width: 310px;
-  max-width: 100%;
-  padding: 18px 32px 18px 32px;
-  border-radius: 32px;
-  background-color: transparent;
-  border: 2px solid var(--color-secondary-medium-gray);
-}
-.contacts-section__form-input:focus {
-  color: var(--color-primary-light);
-  background-color: var(--color-secondary-medium-gray);
-  outline: none;
-}
-.contacts-section__form-input::placeholder {
-  font-size: 13px;
-  color: var(--color-primary-light);
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -27,12 +27,11 @@
     gap: 40px;
   }
 
-  &__result img:first-child {
+  &__result img {
     width: 335px;
-  }
 
-  &__result img:last-child {
-    width: 335px;
-    margin-left: 180px;
+    &:last-child {
+      margin-left: 180px;
+    }
   }
 }
