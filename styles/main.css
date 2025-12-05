@@ -8,6 +8,15 @@
   --color-secondary-yellow: #ffd02b;
 }
 
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 @font-face {
   font-display: swap;
   font-family: "Play";
@@ -36,15 +45,6 @@
   font-weight: 600;
   src: url("/fonts/roboto-v50-latin-600.woff2") format("woff2");
 }
-.visually-hidden {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-
 *,
 *::before,
 *::after {
@@ -113,6 +113,7 @@ ul {
   width: 100%;
   max-width: 1240px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .text-brand {
@@ -386,7 +387,7 @@ ul {
   .header {
     background: none;
     backdrop-filter: none;
-    padding: 15px 15px 25px 15px;
+    padding: 15px 0;
   }
 }
 .header__container {
@@ -463,6 +464,17 @@ ul {
     padding: 88px 15px;
   }
 }
+.hero-section__content {
+  width: 530px;
+}
+@media screen and (max-width: 768px) {
+  .hero-section__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
 .hero-section__text {
   color: var(--color-primary-midnight-blue);
   padding-bottom: 16px;
@@ -511,9 +523,6 @@ ul {
   }
 }
 
-.services-section {
-  padding-bottom: 176px;
-}
 .services-section__container {
   display: flex;
   gap: 28px;
@@ -524,17 +533,39 @@ ul {
   flex-direction: column;
   gap: 40px;
 }
-.services-section__content-text {
+@media screen and (max-width: 768px) {
+  .services-section__content {
+    gap: 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .services-section__title {
+    font-size: 32px;
+    line-height: 1.18;
+  }
+}
+.services-section__text {
   color: var(--color-primary-midnight-blue);
   font-size: 22px;
   font-weight: 400;
   line-height: 1.7;
+}
+@media screen and (max-width: 768px) {
+  .services-section__text {
+    font-size: 18px;
+    line-height: 1.16;
+  }
 }
 .services-section__result {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
   gap: 40px;
+}
+@media screen and (max-width: 768px) {
+  .services-section__result {
+    display: none;
+  }
 }
 .services-section__result img {
   width: 335px;
@@ -544,15 +575,34 @@ ul {
 }
 
 .advantages-section {
+  padding-top: 176px;
   padding-bottom: 96px;
+}
+@media screen and (max-width: 768px) {
+  .advantages-section {
+    padding-top: 100px;
+  }
 }
 .advantages-section__title {
   padding-bottom: 48px;
 }
+@media screen and (max-width: 768px) {
+  .advantages-section__title {
+    font-size: 32px;
+    padding-bottom: 24px;
+  }
+}
 .advantages-section__list {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 56px;
+}
+@media screen and (max-width: 768px) {
+  .advantages-section__list {
+    gap: 12px;
+  }
 }
 .advantages-section__card {
   display: flex;
@@ -563,6 +613,12 @@ ul {
   border-radius: 32px;
   box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
   background: rgb(255, 255, 255);
+}
+@media screen and (max-width: 768px) {
+  .advantages-section__card {
+    width: 100%;
+    height: auto;
+  }
 }
 .advantages-section__text {
   color: var(--color-primary-midnight-blue);

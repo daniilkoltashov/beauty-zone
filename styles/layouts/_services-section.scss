@@ -1,6 +1,6 @@
-.services-section {
-  padding-bottom: 176px;
+@use '../utils/index' as utils;
 
+.services-section {
   &__container {
     display: flex;
     gap: 28px;
@@ -12,11 +12,27 @@
     flex-direction: column;
     gap: 40px;
 
-    &-text {
-      color: var(--color-primary-midnight-blue);
-      font-size: 22px;
-      font-weight: 400;
-      line-height: 1.7;
+    @media screen and (max-width: utils.$bp-tablet) {
+      gap: 24px;
+    }
+  }
+
+  &__title {
+    @media screen and (max-width: utils.$bp-tablet) {
+      font-size: 32px;
+      line-height: 1.18;
+    }
+  }
+
+  &__text {
+    color: var(--color-primary-midnight-blue);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.7;
+
+    @media screen and (max-width: utils.$bp-tablet) {
+      font-size: 18px;
+      line-height: 1.16;
     }
   }
 
@@ -25,6 +41,10 @@
     flex-direction: column;
     flex-shrink: 0;
     gap: 40px;
+
+    @media screen and (max-width: utils.$bp-tablet) {
+      display: none;
+    }
   }
 
   &__result img {
