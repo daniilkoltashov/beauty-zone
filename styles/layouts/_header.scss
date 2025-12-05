@@ -1,3 +1,5 @@
+@use '../utils/index' as utils;
+
 .header {
   position: absolute;
   top: 0;
@@ -6,6 +8,12 @@
   padding: 32px 0;
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(10px);
+
+  @media screen and (max-width: utils.$bp-tablet) {
+    background: none;
+    backdrop-filter: none;
+    padding: 15px 15px 25px 15px;
+  }
 
   &__container {
     display: flex;
@@ -24,6 +32,10 @@
     justify-content: center;
     flex-grow: 1;
     gap: 56px;
+
+    @media screen and (max-width: utils.$bp-tablet) {
+      display: none;
+    }
   }
 
   &__link {
@@ -51,6 +63,9 @@
     &:hover {
       fill: var(--color-primary-light-blue);
       cursor: pointer;
+    }
+    @media screen and (max-width: utils.$bp-tablet) {
+      display: none;
     }
   }
 }

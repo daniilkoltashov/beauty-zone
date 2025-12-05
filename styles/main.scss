@@ -1,10 +1,7 @@
+@use 'utils/index';
+
 @use 'globals';
 
-@use 'utils/normalize';
-@use 'utils/fonts';
-@use 'utils/variables';
-@use 'utils/utils';
-@use 'utils/mixins';
 
 @use 'components/button';
 @use 'components/carousel-button';
