@@ -1,0 +1,11 @@
+@use '../utils/index' as utils;
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+
+  @media screen and (max-width: utils.$bp-tablet) {
+    padding: 0 15px;
+  }
+}

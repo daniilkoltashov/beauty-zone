@@ -109,13 +109,6 @@ ul {
   list-style: none;
 }
 
-.container {
-  width: 100%;
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 .text-brand {
   color: var(--color-primary-midnight-blue);
 }
@@ -167,6 +160,11 @@ ul {
 .carousel-button.next {
   transform: rotate(180deg);
 }
+@media screen and (max-width: 768px) {
+  .carousel-button {
+    display: none;
+  }
+}
 
 .contacts-form {
   position: relative;
@@ -175,6 +173,12 @@ ul {
   height: 481px;
   background: var(--color-secondary-navy-blue);
   border-radius: 32px;
+}
+@media screen and (max-width: 768px) {
+  .contacts-form {
+    width: 320px;
+    height: 434px;
+  }
 }
 .contacts-form__title {
   color: var(--color-primary-light);
@@ -372,6 +376,17 @@ ul {
 .modal__form-terms {
   color: var(--color-secondary-medium-gray);
   text-underline-offset: 2px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
 }
 
 .header {
@@ -575,12 +590,11 @@ ul {
 }
 
 .advantages-section {
-  padding-top: 176px;
-  padding-bottom: 96px;
+  padding: 176px 0 96px 0;
 }
 @media screen and (max-width: 768px) {
   .advantages-section {
-    padding-top: 100px;
+    padding: 100px 0 40px 0;
   }
 }
 .advantages-section__title {
@@ -616,7 +630,6 @@ ul {
 }
 @media screen and (max-width: 768px) {
   .advantages-section__card {
-    width: 100%;
     height: auto;
   }
 }
@@ -638,6 +651,12 @@ ul {
 .treatments-section__title {
   padding-bottom: 48px;
 }
+@media screen and (max-width: 768px) {
+  .treatments-section__title {
+    font-size: 32px;
+    padding-bottom: 24px;
+  }
+}
 .treatments-section__slider {
   display: flex;
   align-items: center;
@@ -645,14 +664,22 @@ ul {
 }
 .treatments-section__list {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 16px;
+}
+@media screen and (max-width: 768px) {
+  .treatments-section__list li:nth-child(2), .treatments-section__list li:nth-child(3) {
+    display: none;
+  }
 }
 .treatments-section__card {
   position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
   width: 344px;
   height: 456px;
   border-radius: 4px 120px 4px 120px;
@@ -668,11 +695,8 @@ ul {
   height: 100%;
 }
 .treatments-section__text {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
   color: var(--color-primary-light);
-  padding-bottom: 32px;
+  padding: 32px;
   font-size: 22px;
   text-align: center;
   line-height: 1.2;
@@ -690,10 +714,21 @@ ul {
   flex-direction: row;
   gap: 32px;
 }
+@media screen and (max-width: 768px) {
+  .contacts-section__container {
+    flex-direction: column;
+  }
+}
 .contacts-section__maps {
   width: 605px;
   height: 480px;
   border-radius: 32px;
+}
+@media screen and (max-width: 768px) {
+  .contacts-section__maps {
+    width: 360px;
+    height: 232px;
+  }
 }
 
 .footer {
