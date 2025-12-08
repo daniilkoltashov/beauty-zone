@@ -9,3 +9,6 @@ build/
 .cache/
 *.tmp
 *.DS_Store
+.prettierrc
+package-lock.json
+package-lock.json

@@ -64,6 +64,7 @@
       fill: var(--color-primary-light-blue);
       cursor: pointer;
     }
+
     @media screen and (max-width: utils.$bp-tablet) {
       display: none;
     }
