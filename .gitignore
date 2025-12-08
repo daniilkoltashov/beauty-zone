@@ -1,3 +1,7 @@
 .idea/
 node_modules/
+.prettierrc
+.stylelintrc.json
+eslint.config.mjs
+package.json
 package-lock.json
