@@ -6,7 +6,7 @@
   left: 0;
   width: 100%;
   padding: 32px 0;
-  background: rgba(255, 255, 255, 0.25);
+  background: rgb(255 255 255 / 25%);
   backdrop-filter: blur(10px);
 
   @media screen and (max-width: utils.$bp-tablet) {
@@ -48,7 +48,7 @@
     transition: 0.3s;
 
     &:hover {
-      color: var(--color-primary-light-blue), rgba(43, 127, 255, 1);
+      color: var(--color-primary-light-blue), rgb(43 127 255 / 100%);
     }
   }
 

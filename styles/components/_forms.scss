@@ -2,7 +2,7 @@
 
 .contacts-form {
   position: relative;
-  padding: 48px 56px 48px 56px;
+  padding: 48px 56px;
   width: 423px;
   height: 481px;
   background: var(--color-secondary-navy-blue);
@@ -34,7 +34,7 @@
 
   &__input {
     color: var(--color-primary-light);
-    padding: 18px 32px 18px 32px;
+    padding: 18px 32px;
     width: 310px;
     max-width: 100%;
     background-color: transparent;

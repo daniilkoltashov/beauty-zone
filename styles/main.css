@@ -1,5 +1,5 @@
 :root {
-  --color-primary-light: #ffffff;
+  --color-primary-light: #fff;
   --color-primary-light-blue: #2b7fff;
   --color-primary-midnight-blue: #011c44;
   --color-secondary-dark-gray: #4a4a4a;
@@ -19,28 +19,28 @@
 
 @font-face {
   font-display: swap;
-  font-family: "Play";
+  font-family: Play;
   font-style: normal;
   font-weight: 400;
   src: url("fonts/play-v21-latin-regular.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
-  font-family: "Play";
+  font-family: Play;
   font-style: normal;
   font-weight: 700;
   src: url("/fonts/play-v21-latin-700.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
-  font-family: "Roboto";
+  font-family: Roboto;
   font-style: normal;
   font-weight: 400;
   src: url("/fonts/roboto-v50-latin-regular.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
-  font-family: "Roboto";
+  font-family: Roboto;
   font-style: normal;
   font-weight: 600;
   src: url("/fonts/roboto-v50-latin-600.woff2") format("woff2");
@@ -74,7 +74,7 @@ p {
 
 h1 {
   color: var(--color-primary-light-blue), rgb(43, 127, 255);
-  font-family: "Play", sans-serif;
+  font-family: Play, sans-serif;
   font-size: 140px;
   font-weight: 700;
   line-height: 0.8;
@@ -82,7 +82,7 @@ h1 {
 
 h2 {
   color: var(--color-primary-mi-blue);
-  font-family: "Play", sans-serif;
+  font-family: Play, sans-serif;
   font-size: 64px;
   font-weight: 700;
   line-height: 1.15;
@@ -168,7 +168,7 @@ ul {
 
 .contacts-form {
   position: relative;
-  padding: 48px 56px 48px 56px;
+  padding: 48px 56px;
   width: 423px;
   height: 481px;
   background: var(--color-secondary-navy-blue);
@@ -198,7 +198,7 @@ ul {
 }
 .contacts-form__input {
   color: var(--color-primary-light);
-  padding: 18px 32px 18px 32px;
+  padding: 18px 32px;
   width: 310px;
   max-width: 100%;
   background-color: transparent;
@@ -237,10 +237,7 @@ ul {
 
 .backdrop {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -329,7 +326,7 @@ ul {
 }
 .modal__form-input {
   color: var(--color-primary-light);
-  padding: 18px 32px 18px 32px;
+  padding: 18px 32px;
   width: 310px;
   max-width: 100%;
   background-color: transparent;
@@ -456,14 +453,14 @@ ul {
 }
 
 .hero-section {
-  background-image: linear-gradient(94.33deg, rgb(255, 255, 255) 10%, rgba(255, 255, 255, 0.85) 26%, rgba(255, 255, 255, 0.19) 53%, rgba(255, 255, 255, 0) 74%), url(/images/hero-background.png);
+  background-image: linear-gradient(94.33deg, rgb(255, 255, 255) 10%, rgba(255, 255, 255, 0.85) 26%, rgba(255, 255, 255, 0.19) 53%, rgba(255, 255, 255, 0) 74%), url("/images/hero-background.png");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
 }
 @media screen and (max-width: 768px) {
   .hero-section {
-    background-image: linear-gradient(38.33deg, rgb(255, 255, 255), rgba(255, 255, 255, 0.78) 31%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 68%), url(/images/hero-background.png);
+    background-image: linear-gradient(38.33deg, rgb(255, 255, 255), rgba(255, 255, 255, 0.78) 31%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 68%), url("/images/hero-background.png");
     background-position: top center;
   }
 }
@@ -590,11 +587,11 @@ ul {
 }
 
 .advantages-section {
-  padding: 176px 0 96px 0;
+  padding: 176px 0 96px;
 }
 @media screen and (max-width: 768px) {
   .advantages-section {
-    padding: 100px 0 40px 0;
+    padding: 100px 0 40px;
   }
 }
 .advantages-section__title {
@@ -608,8 +605,7 @@ ul {
 }
 .advantages-section__list {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: center;
   gap: 56px;
 }
@@ -625,7 +621,7 @@ ul {
   width: 316px;
   height: 181px;
   border-radius: 32px;
-  box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
+  box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.38);
   background: rgb(255, 255, 255);
 }
 @media screen and (max-width: 768px) {
@@ -664,10 +660,9 @@ ul {
 }
 .treatments-section__list {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 16px;
 }
 @media screen and (max-width: 768px) {
@@ -682,7 +677,7 @@ ul {
   justify-content: flex-end;
   width: 344px;
   height: 456px;
-  border-radius: 4px 120px 4px 120px;
+  border-radius: 4px 120px;
   background-image: linear-gradient(180deg, rgba(1, 28, 68, 0) 47%, rgba(1, 28, 68, 0.73) 83%, rgb(1, 28, 68) 99%);
   overflow: hidden;
 }
@@ -706,7 +701,7 @@ ul {
   padding-bottom: 96px;
 }
 .contacts-section__container {
-  padding: 0 64px 0 64px;
+  padding: 0 64px;
 }
 .contacts-section__content {
   display: flex;
@@ -748,10 +743,7 @@ ul {
 }
 .footer::after {
   position: absolute;
-  right: -30px;
-  top: auto;
-  left: auto;
-  bottom: -60px;
+  inset: auto -30px -60px auto;
   width: 278px;
   height: 213px;
   background-image: url("/images/cosmetics.png");

@@ -6,7 +6,7 @@
 
 body {
   color: var(--color-primary-light-blue);
-  background-color: var(--color-primary-light), rgba(255, 255, 255, 1);
+  background-color: var(--color-primary-light), rgb(255 255 255 / 100%);
   font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -26,8 +26,8 @@ p {
 }
 
 h1 {
-  color: var(--color-primary-light-blue), rgba(43, 127, 255, 1);
-  font-family: 'Play', sans-serif;
+  color: var(--color-primary-light-blue), rgb(43 127 255 / 100%);
+  font-family: Play, sans-serif;
   font-size: 140px;
   font-weight: 700;
   line-height: 0.8;
@@ -35,7 +35,7 @@ h1 {
 
 h2 {
   color: var(--color-primary-mi-blue);
-  font-family: 'Play', sans-serif;
+  font-family: Play, sans-serif;
   font-size: 64px;
   font-weight: 700;
   line-height: 1.15;

@@ -4,12 +4,12 @@
   background-image:
     linear-gradient(
       94.33deg,
-      rgba(255, 255, 255, 1) 10%,
-      rgba(255, 255, 255, 0.85) 26%,
-      rgba(255, 255, 255, 0.19) 53%,
-      rgba(255, 255, 255, 0) 74%
+      rgb(255 255 255 / 100%) 10%,
+      rgb(255 255 255 / 85%) 26%,
+      rgb(255 255 255 / 19%) 53%,
+      rgb(255 255 255 / 0%) 74%
     ),
-    url(/images/hero-background.png);
+    url("/images/hero-background.png");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
@@ -18,12 +18,12 @@
     background-image:
       linear-gradient(
         38.33deg,
-        rgba(255, 255, 255, 1),
-        rgba(255, 255, 255, 0.78) 31%,
-        rgba(255, 255, 255, 0.2) 50%,
-        rgba(255, 255, 255, 0) 68%
+        rgb(255 255 255 / 100%),
+        rgb(255 255 255 / 78%) 31%,
+        rgb(255 255 255 / 20%) 50%,
+        rgb(255 255 255 / 0%) 68%
       ),
-      url(/images/hero-background.png);
+      url("/images/hero-background.png");
     background-position: top center;
   }
 
