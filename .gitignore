@@ -1,14 +1,5 @@
 node_modules/
-.env*
-.vscode/
 .idea/
-*.code-workspace
-dist/
-build/
-*.log
-.cache/
-*.tmp
-*.DS_Store
 .prettierrc
 package.json
 package-lock.json
