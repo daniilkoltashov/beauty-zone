@@ -3,6 +3,10 @@
 .treatments-section {
   padding-bottom: 96px;
 
+  @media screen and (max-width: utils.$bp-tablet) {
+    padding-bottom: 64px;
+  }
+
   &__title {
     padding-bottom: 48px;
 
@@ -26,7 +30,8 @@
     gap: 16px;
 
     @media screen and (max-width: utils.$bp-tablet) {
-      li:nth-child(2), li:nth-child(3) {
+      li:nth-child(2),
+      li:nth-child(3) {
         display: none;
       }
     }
@@ -41,10 +46,10 @@
     height: 456px;
     border-radius: 4px 120px;
     background-image: linear-gradient(
-        180deg,
-        rgb(1 28 68 / 0%) 47%,
-        rgb(1 28 68 / 73%) 83%,
-        rgb(1 28 68 / 100%) 99%
+      180deg,
+      rgb(1 28 68 / 0%) 47%,
+      rgb(1 28 68 / 73%) 83%,
+      rgb(1 28 68 / 100%) 99%
     );
     overflow: hidden;
   }

@@ -9,6 +9,7 @@
   border-radius: 32px;
 
   @media screen and (max-width: utils.$bp-tablet) {
+    padding: 32px 20px;
     width: 320px;
     height: 434px;
   }
@@ -20,6 +21,11 @@
     font-weight: 700;
     line-height: 1.18;
     text-align: center;
+
+    @media screen and (max-width: utils.$bp-tablet) {
+      padding-bottom: 24px;
+      font-weight: 600;
+    }
   }
 
   &__field {
@@ -41,6 +47,10 @@
     border: 2px solid var(--color-secondary-medium-gray);
     border-radius: 32px;
 
+    @media screen and (max-width: utils.$bp-tablet) {
+      padding: 16px 24px;
+    }
+
     &:focus {
       color: var(--color-primary-light);
       background-color: var(--color-secondary-medium-gray);
@@ -59,9 +69,14 @@
     color: var(--color-primary-light);
     font-size: 18px;
     font-weight: 250;
+    position: relative;
 
     &:hover {
       color: var(--color-primary-light);
+    }
+
+    @media screen and (max-width: utils.$bp-tablet) {
+      padding: 16px 24px;
     }
   }
 
