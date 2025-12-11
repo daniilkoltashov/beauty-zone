@@ -1,12 +1,14 @@
 .mobile-menu {
   position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2;
+  inset: 0;
   width: 100%;
   height: 100%;
+  background-color: #fff;
+  z-index: 9999;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
   padding: 16px 24px;
-  background-color: var(--color-primary-light);
   transform: translateX(100%);
   transition: transform 0.3s;
 
@@ -16,17 +18,13 @@
 
   &__btn-close {
     position: absolute;
-    top: 16px;
     right: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
     fill: var(--color-secondary-navy-blue);
-    stroke: var(--color-primary-light-blue);
-    background-color: transparent;
+    background: transparent;
     border: none;
     cursor: pointer;
+    width: 30px;
+    height: 30px;
   }
 
   &__logo {
@@ -37,16 +35,27 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    padding-bottom: 16px;
   }
 
   &__link {
-    color: var(--color-primary-dark);
+    color: var(--color-secondary-navy-blue);
     font-size: 14px;
     line-height: 1.5;
     text-decoration: none;
 
     &:hover {
+      font-weight: 700;
       color: var(--color-brand-normal);
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: 16px;
+
+    &-icon {
+      fill: var(--color-secondary-navy-blue);
     }
   }
 }

@@ -487,13 +487,15 @@ ul {
 
 .mobile-menu {
   position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2;
+  inset: 0;
   width: 100%;
   height: 100%;
+  background-color: #fff;
+  z-index: 9999;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
   padding: 16px 24px;
-  background-color: var(--color-primary-light);
   transform: translateX(100%);
   transition: transform 0.3s;
 }
@@ -502,17 +504,13 @@ ul {
 }
 .mobile-menu__btn-close {
   position: absolute;
-  top: 16px;
   right: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
   fill: var(--color-secondary-navy-blue);
-  stroke: var(--color-primary-light-blue);
-  background-color: transparent;
+  background: transparent;
   border: none;
   cursor: pointer;
+  width: 30px;
+  height: 30px;
 }
 .mobile-menu__logo {
   margin-bottom: 32px;
@@ -521,15 +519,24 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding-bottom: 16px;
 }
 .mobile-menu__link {
-  color: var(--color-primary-dark);
+  color: var(--color-secondary-navy-blue);
   font-size: 14px;
   line-height: 1.5;
   text-decoration: none;
 }
 .mobile-menu__link:hover {
+  font-weight: 700;
   color: var(--color-brand-normal);
+}
+.mobile-menu__socials {
+  display: flex;
+  gap: 16px;
+}
+.mobile-menu__socials-icon {
+  fill: var(--color-secondary-navy-blue);
 }
 
 .hero-section {
@@ -741,11 +748,11 @@ ul {
 .treatments-section__slider {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 32px;
 }
 .treatments-section__list {
   display: flex;
-  flex-flow: row wrap;
   align-items: center;
   justify-content: center;
   gap: 16px;

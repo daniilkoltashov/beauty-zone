@@ -19,12 +19,12 @@
   &__slider {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 32px;
   }
 
   &__list {
     display: flex;
-    flex-flow: row wrap;
     align-items: center;
     justify-content: center;
     gap: 16px;

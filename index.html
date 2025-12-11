@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Beauty Zone</title>
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="styles/layouts/_mobile-menu.scss" />
   </head>
   <body>
     <header class="header">
@@ -40,35 +41,11 @@
             <use href="/images/icons.svg#icon-instagram"></use>
           </svg>
         </div>
-        <button class="header__burger menu-btn-open">
+        <button class="header__burger menu-btn-open" type="button">
           <svg width="24" height="24">
             <use href="/images/icons.svg#icon-menu"></use>
           </svg>
         </button>
-        <div class="mobile-menu">
-          <button class="mobile-menu__btn-close menu-btn-close">
-            <svg width="16" height="16">
-              <use href="/images/icons.svg#icon-btn-close"></use>
-            </svg>
-          </button>
-          <a class="mobile-menu__logo" href="/">
-            <img src="./images/logo.svg" alt="Логотип" />
-          </a>
-          <ul class="mobile-menu__list">
-            <li>
-              <a class="mobile-menu__link" href=""> Наші традиції </a>
-            </li>
-            <li>
-              <a class="mobile-menu__link" href=""> Шеф-кухарі </a>
-            </li>
-            <li>
-              <a class="mobile-menu__link" href="">Формати</a>
-            </li>
-            <li>
-              <a class="mobile-menu__link" href=""> Контакти </a>
-            </li>
-          </ul>
-        </div>
       </div>
     </header>
     <main>
@@ -87,70 +64,6 @@
               Запишись та отримай безкоштовну<br />
               консультацію нашого косметолога
             </p>
-          </div>
-        </div>
-        <div class="backdrop is-hidden">
-          <div class="modal">
-            <button class="modal__btn-close modal-btn-close">
-              <svg width="16" height="16">
-                <use href="/images/icons.svg#icon-btn-close"></use>
-              </svg>
-            </button>
-            <h2 class="modal__title">
-              Замовити<br />
-              дзвінок
-            </h2>
-            <p class="modal__text">
-              Запишіться <span class="text-light-blue">безкоштовно</span><br />
-              та отримайте подарунок
-            </p>
-            <form class="modal__form" autocomplete="off">
-              <div class="modal__form-field">
-                <label
-                  class="modal__form-label visually-hidden"
-                  for="modal-user-name"
-                  >Імʼя
-                </label>
-                <input
-                  class="modal__form-input"
-                  type="text"
-                  id="modal-user-name"
-                  placeholder="Ваше ім'я та прізвище"
-                />
-              </div>
-              <div class="modal__form-field">
-                <label class="modal__form-label visually-hidden" for="tel"
-                  >Телефон
-                </label>
-                <input
-                  class="modal__form-input"
-                  type="tel"
-                  id="tel"
-                  placeholder="Ваш номер телефону"
-                />
-              </div>
-              <div class="modal__form-field">
-                <label class="modal__form-label visually-hidden" for="email"
-                  >Електронна пошта
-                </label>
-                <input
-                  class="modal__form-input"
-                  type="email"
-                  id="email"
-                  placeholder="Ваша електронна пошта"
-                />
-              </div>
-              <button class="modal__form-button button" type="submit">
-                Записатись безкоштовно
-              </button>
-              <p class="modal__form-text">
-                Натискаючи на кнопку я погоджуюсь<br />
-                з
-                <a class="modal__form-terms" href="/"
-                  >політикою конфіденційності
-                </a>
-              </p>
-            </form>
           </div>
         </div>
       </section>
@@ -435,6 +348,108 @@
         </address>
       </div>
     </footer>
+
+    <div class="mobile-menu">
+      <button class="mobile-menu__btn-close menu-btn-close" type="button">
+        <svg width="16" height="16">
+          <use href="/images/icons.svg#icon-btn-close"></use>
+        </svg>
+      </button>
+      <a class="mobile-menu__logo" href="/">
+        <img src="./images/logo.svg" alt="Логотип" />
+      </a>
+      <ul class="mobile-menu__list">
+        <li>
+          <a class="mobile-menu__link" href="#services-section"> Про нас </a>
+        </li>
+        <li>
+          <a class="mobile-menu__link" href="#advantages-section"> Чому ми </a>
+        </li>
+        <li>
+          <a class="mobile-menu__link" href="#treatments-section"
+            >Наші процедури</a
+          >
+        </li>
+        <li>
+          <a class="mobile-menu__link" href="#contacts-section"> Контакти </a>
+        </li>
+      </ul>
+      <div class="mobile-menu__socials">
+        <svg class="mobile-menu__socials-icon" width="32" height="32">
+          <use href="/images/icons.svg#icon-tel"></use>
+        </svg>
+        <svg class="mobile-menu__socials-icon" width="32" height="32">
+          <use href="/images/icons.svg#icon-facebook"></use>
+        </svg>
+        <svg class="mobile-menu__socials-icon" width="32" height="32">
+          <use href="/images/icons.svg#icon-instagram"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal__btn-close modal-btn-close">
+          <svg width="16" height="16">
+            <use href="/images/icons.svg#icon-btn-close"></use>
+          </svg>
+        </button>
+        <h2 class="modal__title">
+          Замовити<br />
+          дзвінок
+        </h2>
+        <p class="modal__text">
+          Запишіться <span class="text-light-blue">безкоштовно</span><br />
+          та отримайте подарунок
+        </p>
+        <form class="modal__form" autocomplete="off">
+          <div class="modal__form-field">
+            <label
+              class="modal__form-label visually-hidden"
+              for="modal-user-name"
+              >Імʼя
+            </label>
+            <input
+              class="modal__form-input"
+              type="text"
+              id="modal-user-name"
+              placeholder="Ваше ім'я та прізвище"
+            />
+          </div>
+          <div class="modal__form-field">
+            <label class="modal__form-label visually-hidden" for="tel"
+              >Телефон
+            </label>
+            <input
+              class="modal__form-input"
+              type="tel"
+              id="tel"
+              placeholder="Ваш номер телефону"
+            />
+          </div>
+          <div class="modal__form-field">
+            <label class="modal__form-label visually-hidden" for="email"
+              >Електронна пошта
+            </label>
+            <input
+              class="modal__form-input"
+              type="email"
+              id="email"
+              placeholder="Ваша електронна пошта"
+            />
+          </div>
+          <button class="modal__form-button button" type="submit">
+            Записатись безкоштовно
+          </button>
+          <p class="modal__form-text">
+            Натискаючи на кнопку я погоджуюсь<br />
+            з
+            <a class="modal__form-terms" href="/"
+              >політикою конфіденційності
+            </a>
+          </p>
+        </form>
+      </div>
+    </div>
 
     <script src="script/modal.js"></script>
     <script src="script/mobile-menu.js"></script>
