@@ -1,3 +1,5 @@
+@use '../utils/index' as utils;
+
 .footer {
   position: relative;
   padding: 56px 0;
@@ -12,15 +14,33 @@
     background-image: url('/images/cosmetics.png');
     background-repeat: no-repeat;
     content: '';
+
+    @media screen and (max-width: utils.$bp-tablet) {
+      display: none;
+    }
   }
 
   &__container {
     display: flex;
+
+    @media screen and (max-width: utils.$bp-tablet) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__nav {
     display: flex;
     flex-basis: 50%;
+
+    @media screen and (max-width: utils.$bp-tablet) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-basis: 0;
+      gap: 42px;
+    }
   }
 
   &__logo {
@@ -33,6 +53,13 @@
     flex-direction: column;
     flex-grow: 1;
     gap: 16px;
+
+    @media screen and (max-width: utils.$bp-tablet) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 16px;
+    }
   }
 
   &__link {
@@ -40,7 +67,7 @@
     font-size: 16px;
     line-height: 1.18;
     text-decoration: none;
-    transition: 0.3s;
+    transition: color 0.3s;
 
     &:hover {
       color: var(--color-primary-light-blue);
@@ -51,17 +78,44 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+
+    @media screen and (max-width: utils.$bp-tablet) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__address {
     display: flex;
     flex-basis: 50%;
 
+    @media screen and (max-width: utils.$bp-tablet) {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+    }
+
     &-list {
       display: flex;
       flex-direction: column;
       gap: 16px;
       padding-bottom: 16px;
+
+      @media screen and (max-width: utils.$bp-tablet) {
+        display: none;
+      }
+    }
+
+    &-info {
+      @media screen and (max-width: utils.$bp-tablet) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+      }
     }
 
     &-link {
@@ -69,10 +123,17 @@
       font-size: 16px;
       line-height: 1.18;
       text-decoration: none;
-      transition: 0.3s;
+      transition: color 0.3s;
 
       &:hover {
         color: var(--color-primary-light-blue);
+      }
+
+      @media screen and (max-width: utils.$bp-tablet) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
     }
 
