@@ -40,8 +40,8 @@
 
     @media screen and (max-width: utils.$bp-tablet) {
       flex-shrink: 0;
-      margin: 0 -15px;
-      width: 360px;
+      margin: 0;
+      width: 100%;
       height: 232px;
       border-radius: 0;
     }

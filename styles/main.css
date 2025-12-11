@@ -178,7 +178,7 @@ ul {
   .contacts-form {
     padding: 32px 20px;
     width: 320px;
-    height: 434px;
+    height: 460px;
   }
 }
 .contacts-form__title {
@@ -540,14 +540,14 @@ ul {
 }
 
 .hero-section {
-  background-image: linear-gradient(94.33deg, rgb(255, 255, 255) 10%, rgba(255, 255, 255, 0.85) 26%, rgba(255, 255, 255, 0.19) 53%, rgba(255, 255, 255, 0) 74%), url("../images/hero-background.png");
+  background-image: linear-gradient(94.33deg, rgb(255, 255, 255) 10%, rgba(255, 255, 255, 0.85) 26%, rgba(255, 255, 255, 0.19) 53%, rgba(255, 255, 255, 0) 74%), url("/images/background-forms.png");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
 }
 @media screen and (max-width: 768px) {
   .hero-section {
-    background-image: linear-gradient(38.33deg, rgb(255, 255, 255), rgba(255, 255, 255, 0.78) 31%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 68%), url("../images/hero-background.png");
+    background-image: linear-gradient(38.33deg, rgb(255, 255, 255), rgba(255, 255, 255, 0.78) 31%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 68%), url("/images/hero-background.png");
     background-position: top center;
   }
 }
@@ -832,8 +832,8 @@ ul {
 @media screen and (max-width: 768px) {
   .contacts-section__maps {
     flex-shrink: 0;
-    margin: 0 -15px;
-    width: 360px;
+    margin: 0;
+    width: 100%;
     height: 232px;
     border-radius: 0;
   }
