@@ -6,6 +6,7 @@
   margin: 0 auto;
 
   @media screen and (max-width: utils.$bp-tablet) {
+    width: 100dvw;
     padding: 0 15px;
   }
 }
