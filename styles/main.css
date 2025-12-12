@@ -306,6 +306,10 @@ ul {
 }
 @media screen and (max-width: 768px) {
   .modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100dvw;
     height: 100dvh;
     padding: 15px;

@@ -54,6 +54,10 @@
   border-radius: 48px;
 
   @media screen and (max-width: utils.$bp-tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100dvw;
     height: 100dvh;
     padding: 15px;
