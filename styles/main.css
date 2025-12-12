@@ -306,6 +306,8 @@ ul {
 }
 @media screen and (max-width: 768px) {
   .modal {
+    width: 100dvw;
+    height: 100dvh;
     padding: 15px;
     border-radius: 1px;
   }
